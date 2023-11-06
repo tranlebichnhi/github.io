@@ -1,0 +1,42 @@
+<footer class="footer">
+   <div class="footer-wrap">
+      <div class="footer-content">
+         <div class="footer-logo">
+            <img src="<%= site.data.infomation.logoPath %>" alt="logo" />
+         </div>
+         <div class="footer-info">
+            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+               Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+               consectetur.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+         </div>
+         <div class="footer-meta">
+            <ul class="footer-meta-list">
+               <li class="footer-meta-item">
+                  <a href="#" class="footer-meta-link">
+                     <img src="" alt="" />
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="footer-nav">
+            <ul class="footer-nav-list">
+               <% for (var i in theme.menu){ %>
+               <li class="footer-nav-item">
+                  <a href="<%= url_for(theme.menu[i]) %>"><%= i %></a>
+               </li>
+               <% } %>
+            </ul>
+         </div>
+      </div>
+      <div class="footer-bottom">
+         <a href="#">
+            <span>Privacy Policy</span>
+         </a>
+         <p>© Casadora 2023. All rights reserved.</p>
+      </div>
+   </div>
+</footer>
