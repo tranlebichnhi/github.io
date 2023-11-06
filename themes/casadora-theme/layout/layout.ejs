@@ -1,1 +1,19 @@
-Using casadora theme
+<!DOCTYPE html>
+<html lang="en">
+   <%- partial('_partial/head.ejs') %>
+   <body>
+      <!-- header -->
+      <%- partial('_partial/header') %>
+      <!-- main -->
+      <%- body %>
+      <!-- footer -->
+      <%- partial('_partial/footer') %>
+
+      <!-- sidebar -->
+      <%- partial('_partial/sidebar') %>
+      <div class="menu-overlay"></div>
+
+      <!-- script -->
+      <%- partial('_partial/assets/body-script') %>
+   </body>
+</html>
