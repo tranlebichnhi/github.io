@@ -1,7 +1,8 @@
 ---
-title: The works
+title: The Works
 date: 2023-11-05 17:15:37
-layout: works
+layout: page
+
 imgPath: https://images.unsplash.com/photo-1560184897-67f4a3f9a7fa?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 pagePath: /Works
 ---

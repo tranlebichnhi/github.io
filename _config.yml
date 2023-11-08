@@ -104,4 +104,4 @@ theme: casadora-theme
 
 deploy:
    type: git
-   repo: https://github.com/Csynnh/casadora.github.io.git
+   repo: https://github.com/Csynnh/Csynnh.github.io.git

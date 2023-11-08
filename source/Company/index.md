@@ -1,7 +1,7 @@
 ---
 title: The Company
 date: 2023-11-05 17:15:37
-layout: company
+layout: page
 imgPath: https://tripday.vn/wp-content/uploads/2023/03/rose-villa-thao-dien.jpg
 pagePath: /Company
 ---
