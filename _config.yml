@@ -104,4 +104,4 @@ theme: custom
 
 deploy:
    type: git
-   repo: https://github.com/Csynnh/Csynnh.github.io.git
+   repo: https://github.com/tranlebichnhi/tranlebichnhi.github.io.git
