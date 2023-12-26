@@ -1,0 +1,17 @@
+<% site.posts.forEach(function(post){ %> <% if(post.type === 'logofolio' &&
+post.id == 1) { %>
+<section class="section second">
+   <div class="section-wrap">
+      <div class="section-image">
+         <img src="../images/Logo-folio/section-second-img-1.png" alt="img" />
+      </div>
+      <div class="section-content">
+         <h1 class=""><%- post.title %></h1>
+         <p class=""><%- post.desc %></p>
+      </div>
+      <div class="section-image">
+         <img src="../images/Logo-folio/section-second-img-2.png" alt="img" />
+      </div>
+   </div>
+</section>
+<% }}) %>

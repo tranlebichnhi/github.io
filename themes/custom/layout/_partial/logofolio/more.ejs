@@ -1,0 +1,24 @@
+<% site.posts.forEach(function(post){ %> <% if(post.type === 'logofolio' &&
+post.id == 7) { %>
+<section class="section seventh">
+   <div class="section-wrap">
+      <div class="section-content">
+         <h1 class=""><%- post.title %></h1>
+      </div>
+      <div class="section-media">
+         <div class="section-image">
+            <img src="../images/Logo-folio/xinh.png" alt="img" />
+         </div>
+         <div class="section-image">
+            <img src="../images/Logo-folio/mzv.png" alt="img" />
+         </div>
+         <div class="section-image">
+            <img src="../images/Logo-folio/colico.png" alt="img" />
+         </div>
+         <div class="section-image">
+            <img src="../images/Logo-folio/tvshop2.jpg" alt="img" />
+         </div>
+      </div>
+   </div>
+</section>
+<% }}) %>

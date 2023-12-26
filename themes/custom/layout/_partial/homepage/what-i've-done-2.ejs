@@ -1,0 +1,30 @@
+<% site.posts.forEach(function(post){ %> <% if(post.type === 'homepage'
+&&post.section ==="what i've done 2") { %>
+<section class="post second reverse">
+   <div class="post-content">
+      <h2 class="post-heading"><%= post.title %></h2>
+      <div class="post-desc">
+         <p><%- post.desc %></p>
+      </div>
+   </div>
+   <div class="post-media go-up">
+      <div class="post-image">
+         <img src="images/Projects/UX-2.png" alt="image" />
+      </div>
+   </div>
+   <div class="post-media-mobile">
+      <div class="post-image">
+         <img src="images/Projects/third-section-img-1.png" alt="image" />
+      </div>
+      <div class="post-image">
+         <img src="images/Projects/third-section-img-2.png" alt="image" />
+      </div>
+      <div class="post-image">
+         <img src="images/Projects/third-section-img-3.png" alt="image" />
+      </div>
+      <div class="post-image">
+         <img src="images/Projects/third-section-img-4.png" alt="image" />
+      </div>
+   </div>
+</section>
+<% }}) %>

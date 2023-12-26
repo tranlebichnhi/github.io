@@ -1,6 +1,7 @@
 ---
 title: { { title } }
+heading: { { heading } }
 date: { { date } }
-imgPath:
-desc:
+imgPath: { { src } }
+desc: { { desc } }
 ---

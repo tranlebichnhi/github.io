@@ -1,0 +1,42 @@
+<% site.posts.forEach(function(post){ %> <% if(post.type === 'homepage'
+&&post.section === 'web design') { %>
+<section class="post fourth">
+   <h2 class="post-heading"><%= post.title %></h2>
+   <div class="post-desc">
+      <p><%- post.desc %></p>
+   </div>
+   <div class="post-content">
+      <div class="post-media">
+         <div class="post-media-item go-up">
+            <div class="post-image">
+               <img src="images/Projects/webcasa.png" alt="image" />
+            </div>
+         </div>
+
+         <div class="post-media-item go-up">
+            <div class="post-image">
+               <img src="images/Projects/mobileweb.png" alt="image" />
+            </div>
+         </div>
+
+         <div class="post-media-item go-up">
+            <div class="post-image">
+               <img src="images/Projects/spa2.png" alt="image" />
+            </div>
+         </div>
+
+         <div class="post-media-item go-up">
+            <div class="post-image">
+               <img src="images/Projects/Serviceweb.png" alt="image" />
+            </div>
+         </div>
+
+         <div class="post-media-item go-up">
+            <div class="post-image">
+               <img src="images/Projects/Template1.png" alt="image" />
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<% }}) %>

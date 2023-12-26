@@ -1,0 +1,27 @@
+<% site.posts.forEach(function(post){ %> <% if(post.type === 'logofolio' &&
+post.id == 2) { %>
+<section class="section third">
+   <div class="section-wrap">
+      <div class="section-media">
+         <div class="section-image">
+            <img src="../images/Logo-folio/tecno.png" alt="img" />
+         </div>
+         <div class="section-media-container">
+            <div class="section-image">
+               <img src="../images/Logo-folio/TMP01.jpg" alt="img" />
+            </div>
+            <div class="section-image">
+               <img src="../images/Logo-folio/Aichemy04.jpg" alt="img" />
+            </div>
+            <div class="section-image">
+               <img src="../images/Logo-folio/tts.png" alt="img" />
+            </div>
+         </div>
+      </div>
+      <div class="section-content">
+         <h1 class=""><%- post.title %></h1>
+         <p class=""><%- post.desc %></p>
+      </div>
+   </div>
+</section>
+<% }}) %>

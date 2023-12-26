@@ -1,0 +1,32 @@
+<% site.posts.forEach(function(post){ %> <% if(post.type === 'homepage'
+&&post.section === 'contact') { %>
+<section class="post contact" id="workwithme">
+   <h2 class="post-heading go-down"><%= post.title %></h2>
+   <div class="post-content">
+      <div class="post-media">
+         <div class="post-image">
+            <img src=<%- page.title ? "../images/Projects/uiux.png" :
+            "images/Projects/uiux.png" %> alt="image" />
+         </div>
+      </div>
+      <div class="post-info">
+         <div class="post-info-item">
+            <p class="post-info-heading go-up">ADDRESS</p>
+            <p class="go-up"><%- post.address%></p>
+         </div>
+         <div class="post-info-item">
+            <p class="post-info-heading go-up">EMAIL</p>
+            <p class="go-up"><%- post.email%></p>
+         </div>
+         <div class="post-info-item go-up">
+            <a
+               class="post-info-heading"
+               href="https://www.linkedin.com/in/nhi-tranlb/"
+               target="_blank"
+               >LINKEDIN</a
+            >
+         </div>
+      </div>
+   </div>
+</section>
+<% }}) %>

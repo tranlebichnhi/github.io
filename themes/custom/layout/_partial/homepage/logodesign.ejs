@@ -1,0 +1,50 @@
+<% site.posts.forEach(function(post){ %> <% if(post.type === 'homepage'
+&&post.section === 'logo design') { %>
+<section class="post fourth fifth">
+   <h2 class="post-heading"><%= post.title %></h2>
+   <div class="post-desc">
+      <p><%- post.desc %></p>
+   </div>
+   <div class="post-content">
+      <div class="post-media fade">
+         <div class="post-media-item">
+            <div class="post-image">
+               <img src="images/Logo-folio/vntailor.png" alt="image" />
+            </div>
+         </div>
+
+         <div class="post-media-item">
+            <div class="post-image">
+               <img src="images/Logo-folio/lotuspa.png" alt="image" />
+            </div>
+         </div>
+
+         <div class="post-media-item">
+            <div class="post-image">
+               <img src="images/Logo-folio/tecno.png" alt="image" />
+            </div>
+         </div>
+
+         <div class="post-media-item">
+            <div class="post-image">
+               <img src="images/Logo-folio/mentor1.png" alt="image" />
+            </div>
+         </div>
+
+         <div class="post-media-item">
+            <div class="post-image">
+               <img src="images/Logo-folio/tmp0.png" alt="image" />
+            </div>
+         </div>
+         <div class="post-media-item">
+            <div class="post-image">
+               <img src="images/Projects/ttf.png" alt="image" />
+            </div>
+         </div>
+      </div>
+      <div class="post-link go-up">
+         <a href="/Logofolio" target="_blank">Wiew more</a>
+      </div>
+   </div>
+</section>
+<% }}) %>

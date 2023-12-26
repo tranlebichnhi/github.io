@@ -1,0 +1,19 @@
+<% site.posts.forEach(function(post){ %> <% if(post.type === 'homepage'
+&&post.section === 'slogan') { %>
+<section class="post sixth" id="intro">
+   <h2 class="post-heading"><%= post.title %></h2>
+   <div class="post-content go-up">
+      <div class="post-desc">
+         <p><%- post.desc %></p>
+      </div>
+      <div class="post-media">
+         <div class="post-link">
+            <a href="#workwithme">Work with me</a>
+         </div>
+         <a href="#workwithme" class="header-next">
+            <i class="fa-solid fa-arrow-down"></i>
+         </a>
+      </div>
+   </div>
+</section>
+<% }}) %>
