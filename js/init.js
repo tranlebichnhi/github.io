@@ -1,23 +1,9 @@
 (function () {
-   // emailjs.init("MxVfwZgSgfZUFCLOR");
-
-   // document.addEventListener("DOMContentLoaded", function () {
-   // var goDownElements = document.querySelectorAll(".go-down");
-   // goDownElements.forEach((item) => {
-   //    item.style.opacity = "1";
-   //    item.style.transform = "translateY(0)";
-   // });
-   // var goUpElements = document.querySelectorAll(".go-up");
-   // goUpElements.forEach((item) => {
-   //    item.style.opacity = "1";
-   //    item.style.transform = "translateY(0)";
-   // });
-
-   // });
    document.addEventListener("DOMContentLoaded", function () {
       var slideDonwElements = document.querySelectorAll(".go-down");
       var slideUpElements = document.querySelectorAll(".go-up");
       var slideRightElements = document.querySelectorAll(".go-right");
+      var slideLeftElements = document.querySelectorAll(".go-left");
       var slideFadeElements = document.querySelectorAll(".fade");
       var windowHeight = window.innerHeight;
       function handleAnimationRun(block, type) {
@@ -28,7 +14,7 @@
          // Thực hiện animation khi phần tử nằm trong viewport
          if (elementPosition < windowHeight) {
             block.style.opacity = "1";
-            type === "right"
+            type === "right" || type === "left"
                ? (block.style.transform = "translateX(0)")
                : type !== "fade"
                ? (block.style.transform = "translateY(0)")
@@ -50,6 +36,7 @@
          slideRightElements.forEach((item) =>
             handleAnimationRun(item, "right")
          );
+         slideLeftElements.forEach((item) => handleAnimationRun(item, "left"));
          slideFadeElements.forEach((item) => handleAnimationRun(item, "fade"));
       }
 
@@ -62,4 +49,29 @@
       // Kích hoạt animation khi trang tải lần đầu tiên
       handleAnimation();
    });
+
+   const menuIcon = document.querySelector(".header-menu");
+   const iconClosesidebar = document.querySelector(".sidebar-close");
+   const sidebar = document.querySelector(".sidebar");
+   const sidebarItems = document.querySelectorAll(".sidebar-item a");
+   const menuOverplay = document.querySelector(".menu-overlay");
+
+   sidebarItems.forEach(function (item) {
+      console.log(location.pathname);
+      if (item.getAttribute("href") === location.pathname)
+         item.parentNode.classList.add("is-active");
+   });
+
+   menuIcon.addEventListener("click", (e) => {
+      sidebar.classList.add("is-show");
+      menuOverplay.classList.add("is-show");
+      document.body.classList.add("is-disabled");
+   });
+   iconClosesidebar.addEventListener("click", handleClosedSidebar);
+   menuOverplay.addEventListener("click", handleClosedSidebar);
+   function handleClosedSidebar() {
+      sidebar.classList.remove("is-show");
+      menuOverplay.classList.remove("is-show");
+      document.body.classList.remove("is-disabled");
+   }
 })();

@@ -55,7 +55,7 @@ i {
 .section .section-content h1 {
    font-family: "secondaryFontRoman";
    font-size: var(--heading-2);
-   margin-bottom: 45px;
+   margin: 45px 0;
 }
 .section .section-content p {
    font-family: "Montserrat";
@@ -196,7 +196,7 @@ i {
 @media screen and (max-width: 767.98px) {
    .section.third .section-wrap {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       padding: 15px;
       height: auto;
    }
@@ -246,6 +246,9 @@ i {
    .section.third.reverse .section-media-container .section-image img {
       aspect-ratio: unset;
    }
+   .section.third.reverse .section-wrap {
+      flex-direction: column;
+   }
 }
 /* Fashion */
 .section.second.fourth .section-wrap {
@@ -255,6 +258,9 @@ i {
 .section.second.fourth .section-media {
    margin: 0 auto;
    width: 90%;
+}
+.section.second.fourth .section-media.hidden {
+   display: none;
 }
 .section.second.fourth .section-content {
    padding-top: 5vw;
@@ -277,6 +283,20 @@ i {
    aspect-ratio: 1;
 }
 @media screen and (max-width: 767.98px) {
+   .section.second.fourth .section-wrap {
+      gap: 0;
+   }
+   .section.second.fourth .section-media:first-child {
+      display: none;
+   }
+   .section.second.fourth .section-media.hidden {
+      display: block;
+      margin-top: 30px;
+   }
+
+   .section.second.fourth .section-media:last-child {
+      padding-top: 0;
+   }
    .section.second.fourth .section-image {
       padding-inline: 50px;
    }
@@ -400,7 +420,7 @@ i {
 
 @media screen and (max-width: 767.98px) {
    .section.third.sixth .section-media {
-      flex-direction: column;
+      flex-direction: column-reverse;
       height: auto;
    }
    .section.third.sixth .section-media-container {
