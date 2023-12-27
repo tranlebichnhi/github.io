@@ -75,6 +75,9 @@ b {
    .post {
       padding: 5vw;
    }
+   .post-desc {
+      padding-inline: 0;
+   }
 }
 
 /* What I’ve done */
@@ -129,7 +132,7 @@ b {
       display: block;
    }
    .post.second .post-media-mobile .post-image:not(:last-child) {
-      padding: 0 8vw;
+      padding: 0 5vw;
    }
    .post.second.reverse .post-content {
       padding: 5vw;
@@ -292,7 +295,7 @@ b {
 }
 @media screen and (max-width: 767.98px) {
    .post.fourth .post-desc {
-      padding: 0;
+      padding: 15px;
       text-align: center;
    }
 }
@@ -421,7 +424,7 @@ b {
 .post.contact .post-info {
    display: flex;
    flex-direction: column;
-   gap: 70px;
+   gap: 5.5vw;
 }
 .post.contact .post-info-item {
    font-family: "Montserrat";
