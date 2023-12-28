@@ -466,6 +466,7 @@ b {
 }
 /* contact */
 .post.contact {
+   height: 100dvh;
    background: #fffcf6;
 }
 .post.contact .post-heading {

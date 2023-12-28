@@ -217,7 +217,7 @@ i {
       flex-direction: column;
       padding: 15px;
       gap: 20px;
-      padding-inline: 100px;
+      padding-inline: 17.85vw;
    }
    .section.third.reverse .section-media-container {
       padding-inline: 20px;
@@ -367,6 +367,7 @@ i {
 /* Education */
 
 .section.third.sixth .section-wrap {
+   padding-top: 40px;
    grid-template-columns: 2fr 1fr;
 }
 .section.third.sixth .section-media {

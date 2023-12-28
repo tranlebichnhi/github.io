@@ -88,7 +88,6 @@
    function handleClickNextIcon(e) {
       e.preventDefault();
       console.log(slider.scrollLeft);
-      if (slider.scrollLeft > (widthScroll + 44) * 4 - 1) reutrn;
       slider.scrollLeft += widthScroll + 44;
    }
    function handleClickPrevIcon(e) {
