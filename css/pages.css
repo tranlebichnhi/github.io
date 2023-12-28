@@ -349,27 +349,35 @@ b {
 .post.fifth .post-heading {
    font-size: var(--heading-2);
 }
+
+.post.fifth .post-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+.post.fifth .post-container i {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #eee;
+   width: 30px;
+   aspect-ratio: 1;
+   border-radius: 100rem;
+   display: none;
+   /* padding: 4px; */
+}
+.post.fifth .post-container i:hover {
+   background: #fff;
+}
 .post.fifth .post-media {
-   margin-top: 80px;
+   scroll-behavior: smooth;
+   margin-block: 80px;
    display: flex;
    flex-direction: row;
    justify-content: center;
    overflow: auto;
    padding-bottom: 10px;
-}
-
-.post.fifth .slider-nav {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 5px;
-}
-.post.fifth .slider-link {
-   display: block;
-   width: 8px;
-   height: 8px;
-   background-color: #aaa;
-   border-radius: 100rem;
 }
 
 @media screen and (max-width: 1549.98px) {
@@ -378,6 +386,15 @@ b {
    }
    .post.fifth .post-media {
       justify-content: flex-start;
+   }
+   .post.fifth .post-content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-inline: 0;
+   }
+   .post.fifth .post-container i {
+      display: flex;
    }
 }
 
@@ -414,6 +431,7 @@ b {
 }
 /* slogan*/
 .post.sixth {
+   height: 100dvh;
    background: #6d6d6d;
    color: white;
    display: flex;
@@ -439,7 +457,13 @@ b {
 .post.sixth .post-link a {
    border-bottom: 1px solid white;
 }
-
+.post.sixth .header-next {
+   border-color: #fff;
+   position: absolute;
+   top: 130%;
+   left: 50%;
+   transform: translateX(-50%);
+}
 /* contact */
 .post.contact {
    background: #fffcf6;
@@ -471,13 +495,7 @@ b {
    padding-bottom: 4px;
    border-bottom: 1px solid #000;
 }
-.post.sixth .header-next {
-   border-color: #fff;
-   position: absolute;
-   top: 150%;
-   left: 50%;
-   transform: translateX(-50%);
-}
+
 @media screen and (max-width: 767.98px) {
    .post.sixth .post-desc {
       font-size: 28px;

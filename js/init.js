@@ -59,7 +59,6 @@
    const menuOverplay = document.querySelector(".menu-overlay");
 
    sidebarItems.forEach(function (item) {
-      console.log(location.pathname);
       if (item.getAttribute("href") === location.pathname)
          item.parentNode.classList.add("is-active");
    });
@@ -77,14 +76,23 @@
       document.body.classList.remove("is-disabled");
    }
 
-   const sliderLinks = document.querySelectorAll(".slider-link");
-   const slide = document.querySelector(".post-media .fade");
-   const sildeItem = slide.querySelector(".post-media-item");
-   const widthItem = sildeItem.getBoundingClientRect().width;
-   sliderLinks.forEach((item) => {
-      item.addEventListener("click", handleChangeSlide);
-   });
-   function handleChangeSlide(e) {
-      slide.scrollLeft += widthItem;
+   const slider = document.querySelector(".post-media.fade");
+   const sliderItem = slider.querySelector(".post-media-item");
+   const widthScroll = sliderItem.getBoundingClientRect().width;
+   const nextIcon = document.querySelector(".fa-angle-right");
+   const prevIcon = document.querySelector(".fa-angle-left");
+
+   nextIcon.addEventListener("click", handleClickNextIcon);
+   prevIcon.addEventListener("click", handleClickPrevIcon);
+
+   function handleClickNextIcon(e) {
+      e.preventDefault();
+      console.log(slider.scrollLeft);
+      if (slider.scrollLeft > (widthScroll + 44) * 4 - 1) reutrn;
+      slider.scrollLeft += widthScroll + 44;
+   }
+   function handleClickPrevIcon(e) {
+      e.preventDefault();
+      slider.scrollLeft -= widthScroll + 44;
    }
 })();
