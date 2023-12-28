@@ -23,6 +23,7 @@ b {
    font-size: var(--heading-3);
    text-align: center;
    margin-bottom: 4.5vw;
+   line-height: 1.6;
 }
 
 .post-content {
