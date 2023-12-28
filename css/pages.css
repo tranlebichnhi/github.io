@@ -74,6 +74,7 @@ b {
    }
    .post {
       padding: 5vw;
+      height: auto;
    }
    .post-desc {
       padding-inline: 0;
@@ -175,7 +176,9 @@ b {
    width: 30%;
    aspect-ratio: 4/3;
 }
-
+.post.third .post-media-item:last-child {
+   align-self: flex-start;
+}
 .post.third .post-desc {
    line-height: 2;
    margin-bottom: 80px;
@@ -205,6 +208,12 @@ b {
 .post.third .post-image.primary.hasTitle img {
    height: 90%;
    /* object-fit: cover; */
+}
+.post.third .post-media-item.scale .post-image {
+   background-color: #f6ca5f;
+}
+.post.third .post-media-item.scale .post-image.primary img {
+   object-fit: scale-down;
 }
 .post.third .post-image.primary .post-image-desc {
    font-family: "secondaryFontRoman";
@@ -256,10 +265,13 @@ b {
 }
 .post.fourth .post-media {
    display: grid;
-   grid-template-columns: 1.2fr 0.6fr 2fr 0.8fr 0.8fr;
+   grid-template-columns: 1fr 0.6fr 2fr 0.8fr 0.8fr;
    place-items: end;
 }
 
+.post.fourth .post-media-item.spa:first-child {
+   transform: scale(2);
+}
 .post.fourth .post-media-item.spa:nth-child(3) {
    transform: translateX(-5%) scale(1.2);
 }
@@ -285,18 +297,21 @@ b {
       width: 25%;
       flex-shrink: 0;
    }
-   .post.fourth .post-media-item.casa:first-child,
+
    .post.fourth .post-media-item.spa:nth-child(3) {
-      width: 40%;
-   }
-   .post.fourth .post-media-item.spa:nth-child(3) {
-      transform: scale(2);
+      /* transform: scale(2); */
    }
 }
 @media screen and (max-width: 767.98px) {
    .post.fourth .post-desc {
       padding: 15px;
       text-align: center;
+   }
+   .post.fourth .post-media-item.spa {
+      width: 40%;
+   }
+   .post.fourth .post-media-item.casa {
+      width: 50%;
    }
 }
 
@@ -323,7 +338,7 @@ b {
 
 .post.fourth .post-link {
    text-align: center;
-   margin-bottom: 40px;
+   margin: 40px 0;
 }
 /* logo design */
 .post.fifth {
@@ -342,6 +357,21 @@ b {
    overflow: auto;
    padding-bottom: 10px;
 }
+
+.post.fifth .slider-nav {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+.post.fifth .slider-link {
+   display: block;
+   width: 8px;
+   height: 8px;
+   background-color: #aaa;
+   border-radius: 100rem;
+}
+
 @media screen and (max-width: 1549.98px) {
    .post.fifth {
       height: auto;

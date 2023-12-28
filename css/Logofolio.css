@@ -53,6 +53,7 @@ i {
    margin-left: 14.32vw;
 }
 .section .section-content h1 {
+   display: block;
    font-family: "secondaryFontRoman";
    font-size: var(--heading-2);
    margin: 45px 0;

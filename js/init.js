@@ -1,5 +1,7 @@
 (function () {
    document.addEventListener("DOMContentLoaded", function () {
+      document.body.scrollIntoView({ behavior: "smooth", block: "center" });
+
       var slideDonwElements = document.querySelectorAll(".go-down");
       var slideUpElements = document.querySelectorAll(".go-up");
       var slideRightElements = document.querySelectorAll(".go-right");
@@ -73,5 +75,16 @@
       sidebar.classList.remove("is-show");
       menuOverplay.classList.remove("is-show");
       document.body.classList.remove("is-disabled");
+   }
+
+   const sliderLinks = document.querySelectorAll(".slider-link");
+   const slide = document.querySelector(".post-media .fade");
+   const sildeItem = slide.querySelector(".post-media-item");
+   const widthItem = sildeItem.getBoundingClientRect().width;
+   sliderLinks.forEach((item) => {
+      item.addEventListener("click", handleChangeSlide);
+   });
+   function handleChangeSlide(e) {
+      slide.scrollLeft += widthItem;
    }
 })();

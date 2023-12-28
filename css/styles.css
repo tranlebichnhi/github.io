@@ -43,6 +43,7 @@
    font-weight: 400;
    font-size: var(--body-title-2);
    margin-bottom: 8vw;
+   line-height: 1.6;
 }
 .header-next {
    display: block;
