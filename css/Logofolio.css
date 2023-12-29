@@ -217,10 +217,12 @@ i {
       flex-direction: column;
       padding: 15px;
       gap: 20px;
-      padding-inline: 17.85vw;
+      width: 60%;
+      margin-inline: auto;
    }
    .section.third.reverse .section-media-container {
       padding-inline: 20px;
+      width: 100%;
    }
    .section.third .section-media-container .section-image {
       height: auto;
