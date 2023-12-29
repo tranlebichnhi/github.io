@@ -5,7 +5,7 @@ i {
    font-style: italic;
 }
 .section-wrap {
-   height: 100dvh;
+   height: 100vh;
    background-color: #fffcf6;
    display: grid;
    grid-template-columns: 50vw 1fr;

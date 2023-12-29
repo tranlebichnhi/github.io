@@ -13,7 +13,7 @@ b {
 }
 
 .post {
-   height: 100dvh;
+   height: 100vh;
    padding: 5vw 10vw;
    background: #e8e8e8;
 }
@@ -343,7 +343,7 @@ b {
 }
 /* logo design */
 .post.fifth {
-   height: 100dvh;
+   height: 100vh;
    padding: 5vw;
    background: #e8e8e8;
 }
@@ -432,7 +432,7 @@ b {
 }
 /* slogan*/
 .post.sixth {
-   height: 100dvh;
+   height: 100vh;
    background: #6d6d6d;
    color: white;
    display: flex;
@@ -467,7 +467,7 @@ b {
 }
 /* contact */
 .post.contact {
-   height: 100dvh;
+   height: 100vh;
    background: #fffcf6;
 }
 .post.contact .post-heading {
