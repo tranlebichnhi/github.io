@@ -261,6 +261,9 @@ b {
 .post.fourth .post-heading {
    font-size: var(--heading-2);
 }
+.post.fourth .post-desc {
+   /* margin-bottom: 40px; */
+}
 .post.fourth .post-content {
    display: block;
 }
