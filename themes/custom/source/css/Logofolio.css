@@ -5,7 +5,7 @@ i {
    font-style: italic;
 }
 .section-wrap {
-   height: 100dvh;
+   height: 100vh;
    background-color: #fffcf6;
    display: grid;
    grid-template-columns: 50vw 1fr;
@@ -53,9 +53,10 @@ i {
    margin-left: 14.32vw;
 }
 .section .section-content h1 {
+   display: block;
    font-family: "secondaryFontRoman";
    font-size: var(--heading-2);
-   margin-bottom: 45px;
+   margin: 45px 0;
 }
 .section .section-content p {
    font-family: "Montserrat";
@@ -196,7 +197,7 @@ i {
 @media screen and (max-width: 767.98px) {
    .section.third .section-wrap {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       padding: 15px;
       height: auto;
    }
@@ -216,10 +217,12 @@ i {
       flex-direction: column;
       padding: 15px;
       gap: 20px;
-      padding-inline: 100px;
+      width: 60%;
+      margin-inline: auto;
    }
    .section.third.reverse .section-media-container {
       padding-inline: 20px;
+      width: 100%;
    }
    .section.third .section-media-container .section-image {
       height: auto;
@@ -246,6 +249,9 @@ i {
    .section.third.reverse .section-media-container .section-image img {
       aspect-ratio: unset;
    }
+   .section.third.reverse .section-wrap {
+      flex-direction: column;
+   }
 }
 /* Fashion */
 .section.second.fourth .section-wrap {
@@ -255,6 +261,9 @@ i {
 .section.second.fourth .section-media {
    margin: 0 auto;
    width: 90%;
+}
+.section.second.fourth .section-media.hidden {
+   display: none;
 }
 .section.second.fourth .section-content {
    padding-top: 5vw;
@@ -277,6 +286,20 @@ i {
    aspect-ratio: 1;
 }
 @media screen and (max-width: 767.98px) {
+   .section.second.fourth .section-wrap {
+      gap: 0;
+   }
+   .section.second.fourth .section-media:first-child {
+      display: none;
+   }
+   .section.second.fourth .section-media.hidden {
+      display: block;
+      margin-top: 30px;
+   }
+
+   .section.second.fourth .section-media:last-child {
+      padding-top: 0;
+   }
    .section.second.fourth .section-image {
       padding-inline: 50px;
    }
@@ -346,6 +369,7 @@ i {
 /* Education */
 
 .section.third.sixth .section-wrap {
+   padding-top: 40px;
    grid-template-columns: 2fr 1fr;
 }
 .section.third.sixth .section-media {
@@ -400,7 +424,7 @@ i {
 
 @media screen and (max-width: 767.98px) {
    .section.third.sixth .section-media {
-      flex-direction: column;
+      flex-direction: column-reverse;
       height: auto;
    }
    .section.third.sixth .section-media-container {

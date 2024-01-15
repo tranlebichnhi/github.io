@@ -2,8 +2,14 @@
 <html lang="en">
    <%- partial("_partial/head") %>
    <body>
+      <!-- side bar -->
+      <%- partial("_partial/naviga") %>
       <!-- main -->
       <%- body %>
+      <!-- side bar -->
+      <%- partial("_partial/sidebar") %>
+      <!-- overlay -->
+      <div class="menu-overlay"></div>
       <!-- scripts -->
       <%- partial('_partial/assets/body-script') %>
    </body>
