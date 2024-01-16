@@ -287,9 +287,7 @@ b {
 .post.fourth .post-media-item.spa:first-child {
    transform:  translateX(-5%) scale(2);
 }
-.post.fourth .post-media-item:nth-child(2) {
-   transform: scale(1.2);
-}
+
 .post.fourth .post-media-item.spa:nth-child(3) {
    transform: translateX(-5%) scale(1.2);
 }
@@ -316,10 +314,7 @@ b {
       width: 25%;
       flex-shrink: 0;
    }
-
-   .post.fourth .post-media-item.spa:nth-child(3) {
-      /* transform: scale(2); */
-   }
+  
 }
 @media screen and (max-width: 767.98px) {
    .post.fourth .post-desc {
