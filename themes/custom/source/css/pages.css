@@ -282,26 +282,21 @@ b {
    display: grid;
    grid-template-columns: 1fr 0.6fr 2fr 0.8fr 0.8fr;
    place-items: center;
+   gap: 25px;
 }
 
-.post.fourth .post-media-item.spa:first-child {
-   transform:  translateX(-5%) scale(2);
+.post.fourth .post-media-item.spa {
+   transform: translateX(-5%) scale(2);
 }
 
-.post.fourth .post-media-item.spa:nth-child(3) {
-   transform: translateX(-5%) scale(1.2);
-}
-
-.post.fourth .post-media-item.spa:nth-child(3) + .post-media-item {
-   transform: translateX(-13%);
-}
 .post.fourth .post-desc {
    padding: 0 20vw;
    text-align: center;
 }
-@media screen and (max-width: 1549.98px) {
+
+@media screen and (max-width: 1279.98px) {
    .post.fourth .post-content {
-      padding-inline: 5vw;
+      padding-inline: 2vw;
    }
    .post.fourth .post-media {
       display: flex;
@@ -311,11 +306,20 @@ b {
       align-items: center;
    }
    .post.fourth .post-media-item {
-      width: 25%;
+      width: calc(20% - 25px);
       flex-shrink: 0;
    }
-  
 }
+@media screen and (max-width: 1023.98px) {
+   .post.fourth .post-media-item {
+      width: calc(30%);
+      flex-shrink: 0;
+   }
+   .post.fourth .post-media-item.casa {
+      min-width: 500px;
+   }
+}
+
 @media screen and (max-width: 767.98px) {
    .post.fourth .post-desc {
       padding: 15px;
@@ -325,7 +329,7 @@ b {
       width: 40%;
    }
    .post.fourth .post-media-item.casa {
-      width: 50%;
+      min-width: 300px;
    }
 }
 
@@ -482,7 +486,7 @@ b {
 .post.contact {
    height: 100vh;
    background: #fffcf6;
-   background-image: url('https://media.canva.com/1/image-resize/1/800_438_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9vZ0xjay9NQUY0NUVvZ0xjay8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAHugJmo48Na05BnRoylkewpnnBZe8kJy7rpUndvCHkCB&exp=1705399780&x-canva-quality=screen&csig=AAAAAAAAAAAAAAAAAAAAAOLn-DIkht_3C0-q1Q-8FhkE2tUzbD5aoO86vLIzVKCC');
+   background-image: url("https://media.canva.com/1/image-resize/1/800_438_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9vZ0xjay9NQUY0NUVvZ0xjay8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAHugJmo48Na05BnRoylkewpnnBZe8kJy7rpUndvCHkCB&exp=1705399780&x-canva-quality=screen&csig=AAAAAAAAAAAAAAAAAAAAAOLn-DIkht_3C0-q1Q-8FhkE2tUzbD5aoO86vLIzVKCC");
    background-size: cover;
 }
 .post.contact .post-heading {
