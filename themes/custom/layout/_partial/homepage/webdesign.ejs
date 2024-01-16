@@ -1,6 +1,7 @@
 <% site.posts.forEach(function(post){ %> <% if(post.type === 'homepage'
 &&post.section === 'web design') { %>
 <section class="post fourth">
+   <p class="post-heading-desc">- SERVICES -</p>
    <h2 class="post-heading"><%= post.title %></h2>
    <div class="post-desc">
       <p><%- post.desc %></p>
@@ -35,9 +36,8 @@
             </div>
          </div>
       </div>
-      <div class="post-link">
-         <a href="" target="_blank">View more</a>
       </div>
-   </div>
-</section>
-<% }}) %>
+      </section>
+      <% }}) %>
+      
+     
