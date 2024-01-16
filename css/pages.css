@@ -306,8 +306,11 @@ b {
       align-items: center;
    }
    .post.fourth .post-media-item {
-      width: calc(20% - 25px);
+      width: calc(18% - 25px);
       flex-shrink: 0;
+   }
+   .post.fourth .post-media-item.casa {
+      flex: 1;
    }
 }
 @media screen and (max-width: 1023.98px) {
