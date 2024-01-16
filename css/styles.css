@@ -23,7 +23,10 @@
    margin-left: auto;
    margin-right: auto;
    text-align: center;
+   background-image: url('https://media.canva.com/1/image-resize/1/800_438_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9vZ0xjay9NQUY0NUVvZ0xjay8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAHugJmo48Na05BnRoylkewpnnBZe8kJy7rpUndvCHkCB&exp=1705399780&x-canva-quality=screen&csig=AAAAAAAAAAAAAAAAAAAAAOLn-DIkht_3C0-q1Q-8FhkE2tUzbD5aoO86vLIzVKCC');
+   background-size: cover;
 }
+
 .header-title {
    font-family: "secondaryFontRoman";
    font-style: italic;

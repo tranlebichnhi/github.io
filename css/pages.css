@@ -15,7 +15,7 @@ b {
 .post {
    height: 100vh;
    padding: 5vw 10vw;
-   background: #e8e8e8;
+   background: #fff;
 }
 
 .post-heading {
@@ -25,7 +25,14 @@ b {
    margin-bottom: 4.5vw;
    line-height: 1.6;
 }
-
+.post-heading-desc {
+   font-size: 22px;
+   font-weight: 500;
+   text-align: center;
+   letter-spacing: 5px;
+   margin-bottom: 20px;
+   color: #555;
+}
 .post-content {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
@@ -61,6 +68,10 @@ b {
    line-height: 1.7;
    letter-spacing: 0.05rem;
    font-size: var(--title-1);
+}
+.post-desc a {
+   text-decoration: underline;
+   font-style: italic;
 }
 @media screen and (max-width: 1023.98px) {
    .post-heading {
@@ -270,15 +281,19 @@ b {
 .post.fourth .post-media {
    display: grid;
    grid-template-columns: 1fr 0.6fr 2fr 0.8fr 0.8fr;
-   place-items: end;
+   place-items: center;
 }
 
 .post.fourth .post-media-item.spa:first-child {
-   transform: scale(2);
+   transform:  translateX(-5%) scale(2);
+}
+.post.fourth .post-media-item:nth-child(2) {
+   transform: scale(1.2);
 }
 .post.fourth .post-media-item.spa:nth-child(3) {
    transform: translateX(-5%) scale(1.2);
 }
+
 .post.fourth .post-media-item.spa:nth-child(3) + .post-media-item {
    transform: translateX(-13%);
 }
@@ -348,7 +363,7 @@ b {
 .post.fifth {
    height: 100vh;
    padding: 5vw;
-   background: #e8e8e8;
+   background: #fffcf6;
 }
 .post.fifth .post-heading {
    font-size: var(--heading-2);
@@ -472,6 +487,8 @@ b {
 .post.contact {
    height: 100vh;
    background: #fffcf6;
+   background-image: url('https://media.canva.com/1/image-resize/1/800_438_100_PNG_F/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9vZ0xjay9NQUY0NUVvZ0xjay8xL3AucG5n?osig=AAAAAAAAAAAAAAAAAAAAAHugJmo48Na05BnRoylkewpnnBZe8kJy7rpUndvCHkCB&exp=1705399780&x-canva-quality=screen&csig=AAAAAAAAAAAAAAAAAAAAAOLn-DIkht_3C0-q1Q-8FhkE2tUzbD5aoO86vLIzVKCC');
+   background-size: cover;
 }
 .post.contact .post-heading {
    font-size: var(--heading-2);
